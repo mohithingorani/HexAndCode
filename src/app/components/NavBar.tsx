@@ -1,8 +1,14 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-export  function NavBar() {
+export function NavBar() {
+  const router = useRouter();
   return (
-    <div style={{height:"10vh"}} className="w-full bg-[#0C0807]  px-9 py-16 text-white z-10 flex flex-row justify-between">
+    <div
+      style={{ height: "10vh" }}
+      className="w-full bg-[#0C0807]  px-9 py-16 text-white z-10 flex flex-row justify-between"
+    >
       <div className="flex flex-row gap-8 justify-between w-full">
         <div className="flex items-center justify-start w-[70%] gap-6">
           <Image
@@ -35,15 +41,27 @@ export  function NavBar() {
           </div>
         </div>
         <div className="flex flex-row gap-2 items-center w-[30%] justify-between">
-            <div></div>
+          <div></div>
           <div className="flex gap-8 text-xl">
             <button className="hover:text-gray-400 transition">TECH</button>
             <button className="hover:text-gray-400 transition">DESIGN</button>
           </div>
 
           <div className="flex gap-4 text-xl">
-            <button className="hover:text-gray-400 transition">LOGIN</button>
-            <button className="text-[#FFE4B0] border px-3 h-12 border-[#FFE4B0] rounded-lg hover:bg-[#FFE4B0] hover:text-black transition">
+            <button
+              onClick={() => {
+                router.push("/landing");
+              }}
+              className="hover:text-gray-400 transition"
+            >
+              LOGIN
+            </button>
+            <button
+              onClick={() => {
+                router.push("/landing");
+              }}
+              className="text-[#FFE4B0] border px-3 h-12 border-[#FFE4B0] rounded-lg hover:bg-[#FFE4B0] hover:text-black transition"
+            >
               JOIN FOR FREE
             </button>
           </div>
@@ -52,7 +70,7 @@ export  function NavBar() {
     </div>
   );
 }
-export  function NavBar2() {
+export function NavBar2() {
   return (
     <div className="w-full bg-[#0C0807] px-9 py-16 text-white z-10 flex flex-row justify-between">
       <div className="flex flex-row gap-8 justify-between w-full">
@@ -87,7 +105,7 @@ export  function NavBar2() {
           </div>
         </div>
         <div className="flex flex-row gap-2 items-center w-[30%] justify-between">
-            <div></div>
+          <div></div>
           <div className="flex gap-8 text-xl">
             <button className="hover:text-gray-400 transition">TECH</button>
             <button className="hover:text-gray-400 transition">DESIGN</button>
@@ -95,7 +113,12 @@ export  function NavBar2() {
 
           <div className="flex gap-4 text-xl">
             <button className="hover:text-gray-400 transition">
-              <Image src={"/basket.svg"} width={"35"} height={"30"} alt="cart"/>
+              <Image
+                src={"/basket.svg"}
+                width={"35"}
+                height={"30"}
+                alt="cart"
+              />
             </button>
             <button className="text-black bg-[#FFE4B0] border px-3 h-12 border-[#FFE4B0] rounded-full transition">
               {"M"}

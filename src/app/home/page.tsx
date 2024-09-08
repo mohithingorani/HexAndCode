@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image";
 import { NavBar2 } from "../components/NavBar";
 import { Footer } from "../components/Footer";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div style={{ height: "90vh" }}>
       <NavBar2 />
@@ -43,9 +46,14 @@ export default function Home() {
             </div>
           </div>
           <div className="flex w-full justify-start items-start px-24 pt-8 pb-8">
-            <Image src={"/allphotos.svg"} width={"800"} height={"300"} alt="photos"/>
+            <Image
+              src={"/allphotos.svg"}
+              width={"800"}
+              height={"300"}
+              alt="photos"
+            />
           </div>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </div>
