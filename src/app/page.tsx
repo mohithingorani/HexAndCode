@@ -78,7 +78,7 @@ export default function Home() {
             </button>
 
             {/* College Affiliation */}
-            <button className="border text-white border-[#FFE4B0] w-full flex justify-center px-4 lg:px-3 py-2 lg:py-1.5 rounded-full font-semibold gap-2 hover:shadow-md transition-all">
+            <button className="border text-white border-[#FFE4B0] w-full flex justify-center px-4 lg:px-3 py-2 lg:py-1.5 rounded-full font-semibold gap-2 hover:shadow-md   -all">
               <div className="flex items-center gap-1">
                 Affiliated with your college?{" "}
                 <div className="text-[#FFE4B0] cursor-pointer">Find it</div>

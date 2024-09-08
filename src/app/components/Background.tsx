@@ -28,6 +28,7 @@ return (
                     <div className="h-fit">courses on cutting-edge Tech and Design tailored for you</div>
                 </div>
             </div>
+            <div></div>
         </div>
     </div>
 );
