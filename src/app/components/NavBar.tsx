@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export  function NavBar() {
   return (
-    <div className="w-full bg-[#0C0807] px-9 py-16 text-white z-10 flex flex-row justify-between">
+    <div style={{height:"10vh"}} className="w-full bg-[#0C0807]  px-9 py-16 text-white z-10 flex flex-row justify-between">
       <div className="flex flex-row gap-8 justify-between w-full">
         <div className="flex items-center justify-start w-[70%] gap-6">
           <Image
