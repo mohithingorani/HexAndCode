@@ -53,7 +53,7 @@ export default function LandingLayout() {
           />
         </div>
         <div className="pl-12 pt-12">
-          <div className="text-black  text-4xl">Topics</div>
+          <div className="text-black font-semibold  text-4xl">Topics</div>
         </div>
         <div className="px-12 w-full mt-8">
           <div className=" text-4xl flex justify-between font-bold pr-12  ">
