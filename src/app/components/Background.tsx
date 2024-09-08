@@ -3,8 +3,8 @@ import NavBar from "./NavBar";
 export function Background() {
 return (
     <div
-        className="relative flex flex-col items-start pl-32  justify-center w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: 'url("/bg.png")' }}
+        className="relative flex flex-col items-start pl-32  justify-center w-full h-screen bg-cover bg-center "
+        style={{ backgroundImage: 'url("/background2.png")' }}
     >
         {/* Content on top of the background */}
         <div className="absolute top-0 left-0 w-full z-10">

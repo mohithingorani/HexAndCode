@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Background } from "../components/Background";
+import { Footer } from "../components/Footer";
 
 export default function LandingLayout() {
   return (
@@ -69,6 +70,7 @@ export default function LandingLayout() {
             <Image src={"/landingcard1.svg"} alt="card1" className="h-full hover:shadow-xl hover:scale-[1.02] transition-transform duration-500" height={700} width={445} />
             <Image src={"/landingcard2.svg"} alt="card1" className="h-full hover:shadow-xl hover:scale-[1.02] transition-transform duration-500" height={700} width={550} />
         </div>
+        <Footer />
       </div>
     </>
   );
