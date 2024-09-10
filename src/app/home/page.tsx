@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <div className="flex w-full justify-start items-start px-24 pt-8 pb-8">
             <Image
-              src={"/allphotos.svg"}
+              src="/allphotos.svg"
               width={"800"}
               height={"300"}
               alt="photos"

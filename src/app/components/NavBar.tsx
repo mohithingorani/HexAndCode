@@ -114,7 +114,7 @@ export function NavBar2() {
           <div className="flex gap-4 text-xl">
             <button className="hover:text-gray-400 transition">
               <Image
-                src={"/basket.svg"}
+                src="/basket.svg"
                 width={"35"}
                 height={"30"}
                 alt="cart"

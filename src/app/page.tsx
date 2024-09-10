@@ -68,8 +68,8 @@ export default function LandingLayout() {
           </div>
         </div>
         <div className="flex justify-center items-start mt-12 gap-24 hover:shadow-md pb-12 w-full">
-            <Image src={"/landingcard1.svg"} alt="card1" className="h-full hover:shadow-xl hover:scale-[1.02] transition-transform duration-500" height={700} width={445} />
-            <Image src={"/landingcard2.svg"} alt="card1" className="h-full hover:shadow-xl hover:scale-[1.02] transition-transform duration-500" height={700} width={550} />
+            <Image src="/landingcard1.svg" alt="card1" className="h-full hover:shadow-xl hover:scale-[1.02] transition-transform duration-500" height={700} width={445} />
+            <Image src="/landingcard2.svg" alt="card1" className="h-full hover:shadow-xl hover:scale-[1.02] transition-transform duration-500" height={700} width={550} />
         </div>
         <Footer/>
       </div>
